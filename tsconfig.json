@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "api/*": [
+        "src/api/*"
+      ],
+      "configs/*": [
+        "src/configs/*"
+      ],
+      "helpers/*": [
+        "src/helpers/*"
+      ],
+      "aditional-models/*": [
+        "src/api/aditional-models/*"
+      ],
+      "errors/*": [
+        "src/api/errors/*"
+      ],
+      "middlewares": [
+        "src/api/middlewares/index"
+      ],
+      "modules/*": [
+        "src/api/modules/*"
+      ],
+      "strategies/*": [
+        "src/api/strategies/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "./storage"
+  ]
+}
